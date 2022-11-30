@@ -20,12 +20,12 @@ function closePopup() {
 }
 
 
-/*function sendForm(evt) {
+function sendForm(evt) {
   evt.preventDefault()
   profTitle.textContent = nameInput.value
   profParag.textContent = busynessInput.value
   closePopup()
-}*/
+}
 
 
 editBtn.addEventListener("click", openPopup)
