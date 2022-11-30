@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Яндекс Практикум - Mesto</title>
+</head>
+
+<body class="root">
+  <div class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/logomesto.png" alt="Логотип Mesto Russia">
+    </header>
+    <main class="content">
+      <section class="profile">
+        <div class="profile__container">
+          <img class="profile__avatar" src="./images/imagekusto.jpg" alt="Фото Жак-Ив Кусто">
+          <div class="profile__info">
+            <h1 class="profile__title">Жак-Ив Кусто</h1>
+            <button class="profile__edit-button" id="myBtn" type="button"></button>
+            <p class="profile__subtitle">Исследователь океана</p>
+          </div>
+        </div>
+        <button class="profile__add-button" type="button"></button>
+      </section>
+      <div class="popup">
+        <div class="popup__container">
+          <button class="popup__close" type="button"></button>
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <form class="popup__form" name="editForm">
+            <fieldset class="popup__fieldset" id="form">
+              <input class="popup__input popup__input_type_name" name="nameInput" type="text" placeholder="Имя">
+              <input class="popup__input popup__input_type_busyness" name="busynessInput" type="text" placeholder="О себе">
+            </fieldset>
+            <button class="popup__save" type="submit">Сохранить</button>
+          </form>
+        </div>
+      </div>
+      <section class="elements">
+        <div class="element">
+          <img class="element__mask" src="./images/abrau.jpg" alt="Изображение Абрау-Дюрсо">
+          <div class="element__group">
+            <h2 class="element__title">Абрау-Дюрсо</h2>
+            <button class="element__like-button" type="button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__mask" src="./images/karachaevo.jpg" alt="Изображение храма посреди озера">
+          <div class="element__group">
+            <h2 class="element__title">Карачаевск</h2>
+            <button class="element__like-button" type="button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__mask" src="./images/krym.jpg" alt="Изображен храм на горе в Крыму">
+          <div class="element__group">
+            <h2 class="element__title">Крым</h2>
+            <button class="element__like-button" type="button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__mask" src="./images/novorossiysk.jpg" alt="Изображен осенний пляж Новороссийска">
+          <div class="element__group">
+            <h2 class="element__title">Новороссийск</h2>
+            <button class="element__like-button" type="button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__mask" src="./images/sevastopol.jpg" alt="Изображен вид на Севастополь с горы">
+          <div class="element__group">
+            <h2 class="element__title">Севастополь</h2>
+            <button class="element__like-button" type="button"></button>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__mask" src="./images/sudak.jpg" alt="Изображен вид на Судак с горы">
+          <div class="element__group">
+            <h2 class="element__title">Судак</h2>
+            <button class="element__like-button" type="button"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2022 Эдуард Самофал</p>
+    </footer>
+  </div>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
